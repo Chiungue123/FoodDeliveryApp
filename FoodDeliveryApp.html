@@ -3,33 +3,99 @@
     <head>
         <html lang="en">
         <meta charset="utf-8">
-        <title>Food Delivery App</title>
+        <title>Pollos Hermanos</title>
         <link rel="stylesheet" href="FoodDeliveryApp.css">
         <script src="FoodDeliveryApp.js"></script>
-        
+        <style>
+            body{
+                background-color: rgb(182, 241, 177);
+                margin: 0px;
+            }
+            .container .header {
+                text-align: center;
+            }        
+            #title{
+                font-size: 50px;
+                font-family: 'Lobster', cursive;
+                margin-bottom: 0px;
+            }
+            #moto{
+                font-size: 18px;
+                font-family: 'Lobster', cursive;
+                margin-top: 0px;
+            }
+            .container .menu{
+                padding-top: 3%;
+                text-align: center;   
+            }
+            .container .nav{
+                text-align: center; 
+                background-color: #333;
+                padding: 10px;
+            }
+            #navbar{
+                border-left: 1px solid white;
+                padding: 15px;
+                color: white;
+                
+                font-size: 15px;
+            }
+            #navbar:first-of-type{
+                border-left: none; 
+            }
+            .logo{
+                float: left;
+            }
+            .container .image{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 200px;
+                position: relative;
+                width: 100%;
+            }
+            .container .image .left{
+                height: 100%;
+                object-fit: cover;
+                clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+            }
+            .container .image .right{
+                height: 100%;
+                object-fit: cover;
+                clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+            }
+            /*.container .image .separator{
+                position: absolute;
+                left: 50%;
+                height: 100%;
+                top: 0;
+                width: 0;
+                border: 2px solid black;
+                transform: skewx(-20deg);
+            }*/
+        </style>
     </head>
     <body>
         <div class="container">
 
             <div class="header">
-                <h1>Pollos Hermanos</h1>
+                <img class="logo" src="Images/PollosHermanos.png" alt="logo" width="100" height="100">
+                <h1 id = "title">Pollos Hermanos</h1>
+                <h2 id = "moto">Bringing You the Best of Both Worlds</h2>
+            </div>
+
+            <div class="image">
+                <img class="left" src="Images/chicken.jpeg">
+                <div class="separator"></div>
+                <img class="right"src="Images/family.jpeg">
             </div>
 
             <div class="nav">
-                <!--menu, about and contact links listed below but displayed horizontally-->
-                <a href="FoodDeliveryApp.html">Menu</a>
-                <a href="FoodDeliveryApp.html">About</a>
-                <a href="FoodDeliveryApp.html">Contact</a>
+                <a id="navbar" href="FoodDeliveryApp.html">Menu</a>
+                <a id="navbar" href="FoodDeliveryApp.html">About</a>
+                <a id="navbar" href="FoodDeliveryApp.html">Contact</a>
             </div>
 
-            <div class="content">
-                <h2>Food Delivery App</h2>
-            </div>
-
-            <div class="footer">
-                <p>Food Delivery App</p>
-            </div>
-            
         </div>
         
     </body>
